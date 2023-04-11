@@ -28,7 +28,7 @@ main {
 }
 
 nav {
-    background-color: beige;
+    background-color: #dbf0fe;
     padding: 10px;
 }
 
@@ -52,14 +52,14 @@ nav a:hover {
     color: darkred;
 }
 
-#banner {
+.bannerBg {
     width: 100%;
     height: auto;
     background-color: white;
 }
 
-#banner img {
-    width: 60%;
+#banner {
+    width: 30%;
     height: auto;
 }
 
@@ -83,4 +83,14 @@ td,
 th {
     border: 1px solid black;
     padding: 5px;
+    font-size: large;
+}
+.moving-text{
+    animation-play-state:running;
+    animation: marquee 20s infinite;
+    
+}
+@keyframes marquee{
+    from {transform: translateX(100%);}
+    to {transform: translateX(-100%);}
 }
